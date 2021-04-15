@@ -14,7 +14,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 echo "Cloning serpico source"
 cd /opt
-git clone https://github.com/SerpicoProject/Serpico
+git clone https://github.com/r3naissance/Serpico
 
 echo "Building serpico"
 cd Serpico
