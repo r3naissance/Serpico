@@ -9,6 +9,6 @@ RUN bundle install
 
 # Allow DB to be on a shared volume
 VOLUME ["$SRP_ROOT/db", "$SRP_ROOT/templates", "$SRP_ROOT/attachments", "$SRP_ROOT/tmp"]
-EXPOSE 8443
+EXPOSE 8888
 
 CMD bash scripts/docker.sh
