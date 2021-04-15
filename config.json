@@ -7,7 +7,7 @@
     "ldap":"false",
     "ldap_domain":"",
     "ldap_dc":"",
-    "dread":true,  //DREAD risk scoring not used by default
+    "dread":true,  //DREAD risk scoring used by default
     "cvss":false,
     "nessusmap":true, //maps nessus findings to serpico findings
     "burpmap":true, //maps burp findings to serpico findings
