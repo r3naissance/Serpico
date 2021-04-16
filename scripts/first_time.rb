@@ -279,11 +279,11 @@ crt.add_extension ef.create_extension("authorityKeyIdentifier",
                                       "keyid:always,issuer:always")
 crt.sign key, OpenSSL::Digest::SHA1.new
 
-File.open("certs/cert.pem", "w") do |f|
+File.open("cert.pem", "w") do |f|
     f.write crt.to_pem
 end
 
-File.open("certs/key.pem", "w") do |f|
+File.open("key.pem", "w") do |f|
     f.write key.to_pem
 end
 
