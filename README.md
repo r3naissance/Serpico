@@ -16,7 +16,8 @@ git clone https://github.com/r3naissance/Serpico
 cd Serpico
 docker build -t serpico .
 docker run --name serpico -p 8888:8888 -v"$(pwd)/db":/Serpico/db \
-  -v"$(pwd)/tmp":/Serpico/tmp -v"$(pwd)/attachments":/Serpico/attachments -it serpico
+  -v"$(pwd)/tmp":/Serpico/tmp -v"$(pwd)/attachments":/Serpico/attachments \
+  -v"$(pwd)/certs":/Serpico/certs -it serpico
 ```
 
 If you don't think you have the dependencies then run my installer script
