@@ -36,19 +36,16 @@ if use_ssl
   no_compression = OpenSSL::SSL::OP_NO_COMPRESSION
   ssl_options = no_ssl2 + no_ssl3 + no_compression
   server_options[:SSLOptions] = ssl_options
-  server_options[:SSLVersion] = :TLSv1_2
+  server_options[:SSLVersion] = :TLSv1_3
 
   if(config_options.key?('ssl_ciphers'))
       cz = config_options['ssl_ciphers']
   else
       # SSL Ciphers
-      cz = ['ECDHE-RSA-AES128-GCM-SHA256','ECDHE-RSA-AES256-GCM-SHA384',
-           'ECDHE-RSA-AES128-CBC-SHA','ECDHE-RSA-AES256-CBC-SHA',
-           'AES128-GCM-SHA256','AES256-GCM-SHA384','AES128-SHA256',
-           'AES256-SHA256','AES128-SHA','AES256-SHA']
+      cz = ['ECDHE-RSA-AES256-GCM-SHA384']
   end
 
-  CIPHERS = cz.push("TLSv1.2","!aNULL","!eNULL","!SSLv2","!SSLv3")
+  CIPHERS = cz.push("TLSv1.3","!aNULL","!eNULL","!SSLv2","!SSLv3")
   server_options[:SSLCiphers] = CIPHERS.join(":")
 
 end
