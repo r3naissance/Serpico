@@ -33,10 +33,9 @@ if use_ssl
 
   no_ssl3 = OpenSSL::SSL::OP_NO_SSLv3
   no_ssl2 = OpenSSL::SSL::OP_NO_SSLv2
-  no_tlsv1_1 = OpenSSL::SSL:OP_NO_TLSv1_1
   no_tlsv1_2 = OpenSSL::SSL:OP_NO_TLSv1_2
   no_compression = OpenSSL::SSL::OP_NO_COMPRESSION
-  ssl_options = no_ssl2 + no_ssl3 + no_tlsv1_2 + no_tlsv1_1 + no_compression
+  ssl_options = no_ssl2 + no_ssl3 + no_tlsv1_2 + no_compression
   server_options[:SSLOptions] = ssl_options
   server_options[:SSLVersion] = :TLSv1_3
 
