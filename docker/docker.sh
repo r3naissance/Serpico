@@ -3,7 +3,8 @@
 # It will initialize the database if it isn't already present.
 
 if [ ! -f $SRP_ROOT/certs/key.pem ]; then
-    openssl req -x509 -newkey rsa:4096 -nodes -keyout certs/key.pem -out certs/cert.pem -days 365
+    echo "Generating certificates"
+    openssl req -x509 -newkey rsa:4096 -nodes -keyout certs/key.pem -out certs/cert.pem -days 1095
 fi
 
 if [ ! -f "$SRP_ROOT/db/master.db" ]; then
