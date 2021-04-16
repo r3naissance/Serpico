@@ -8,6 +8,6 @@ services:
       dockerfile: docker/dev.dockerfile
       context: .
     ports:
-      - "8888:8888"
+      - "8443:8443"
     volumes:
       - ./:/Serpico
