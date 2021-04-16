@@ -1,4 +1,4 @@
-# Serpico
+# Serpico - v1.3.3 w/ reveal.js
 
 ## SimplE RePort wrIting and CollaboratiOn tool
 Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report.
