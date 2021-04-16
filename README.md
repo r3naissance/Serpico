@@ -49,11 +49,3 @@ The Meta language used for Microsoft Word was designed to be as simple as possib
 See also:
 
 * [Serpico Meta-Language In Depth](https://github.com/SerpicoProject/Serpico/wiki/Serpico-Meta-Language-In-Depth)
-
-
-## Support
-* [Wiki](https://github.com/MooseDojo/Serpico/wiki): We try to add most common questions to the wiki.
-* [Slack](https://serpicoproject.slack.com)
-* [Issue](https://github.com/SerpicoProject/Serpico/issues/new) : If you have found a bug or would like a new feature
-* [E-mail Support](https://www.serpicoproject.com/support/): For teams of users or template related questions
-
