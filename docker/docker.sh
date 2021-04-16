@@ -2,6 +2,10 @@
 # This script is used as the entry point for the docker image.
 # It will initialize the database if it isn't already present.
 
+if [ ! -f $SRP_ROOT/key.pem ]; then
+    openssl req -x509 -newkey rsa:4096 -nodes -keyout certs/key.pem -out certs/cert.pem -days 365
+fi
+
 if [ ! -f "$SRP_ROOT/db/master.db" ]; then
     echo "First run detected. Initializing database..."
     ruby "$SRP_ROOT/scripts/first_time.rb"
